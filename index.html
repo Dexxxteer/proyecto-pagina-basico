@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yenifer - Tienda Comida</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yenifer comidas</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#platos">Platos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <!-- Slider -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+      </div>
+      <div class="carousel-inner" style="max-height: 500px">
+        <div
+          class="carousel-item active"
+          style="max-height: 500px"
+          data-bs-interval="10000"
+        >
+          <img src="./imagenes/fondo.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Mis recetas caseras</h1>
+            <p class="h2">Encuentra las recetas de tus platos favoritos</p>
+          </div>
+        </div>
+
+        <div
+          class="carousel-item"
+          style="max-height: 500px"
+          data-bs-interval="10000"
+        >
+          <img src="./imagenes/carne.webp" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- slider -->
+
+    <div class="container py-5">
+      <div id="platos" class="row">
+        <div class="col-12 text-center py-5">
+          <h2>Mis recetas</h2>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./imagenes/pasta-roja.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pasta almeja salsa roja</h5>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                href="#"
+                class="btn btn-primary"
+                >Ver receta</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./imagenes/pasta-queso.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Espaguetis con crema de queso</h5>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                href="#"
+                class="btn btn-primary"
+                >Ver receta</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./imagenes/fritos-salami.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Frito con salami</h5>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                href="#"
+                class="btn btn-primary"
+                >Ver receta</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./imagenes/cheeseburger.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">CheeseBurger</h5>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                href="#"
+                class="btn btn-primary"
+                >Ver receta</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./imagenes/salchipapa.webp"
+              class="card-img-top"
+              alt="..."
+              style="max-height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Salchipapa</h5>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                href="#"
+                class="btn btn-primary"
+                >Ver receta</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./imagenes/comida-tradicional.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Comida-Tradicional</h5>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                href="#"
+                class="btn btn-primary"
+                >Ver receta</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Ingredientes
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item">Una pesa Espaguetis</li>
+
+              <li class="list-group-item">2 cucharadas de aceite de oliva</li>
+
+              <li class="list-group-item">3 dientes de ajo picados</li>
+
+              <li class="list-group-item">3/4 de crema de leche</li>
+
+              <li class="list-group-item">3/4 de queso italiano rallado</li>
+
+              <li class="list-group-item">Perejil fresco picado</li>
+
+              <li class="list-group-item">Pimienta negra molida</li>
+
+              <li class="list-group-item">Sal</li>
+            </ul>
+
+            <h2 class="h5 mt-3">Instrucciones</h2>
+            <p>
+              1. Lleve al fuego una olla grande con agua, agregue una pizca de
+              sal y deje hervir. Cuando sea el momento incorpore los espaguetis
+              y cocínelos según las instrucciones del paquete. Escurra la pasta
+              y guarde una taza de agua de la cocción, reserve.
+            </p>
+
+            <p>
+              2. En una sartén grande a fuego medio agregue un poco de aceite y
+              cocine el ajo hasta que se torne de color dorado (1 minuto), a
+              continuación, añada la crema de leche y media taza del agua de la
+              pasta.
+            </p>
+
+            <p>
+              3. Añada los espaguetis a la sartén y mézclelos con la crema de
+              leche hasta que la pasta quede totalmente recubierta y el líquido
+              esté hirviendo.
+            </p>
+
+            <p>
+              4. Retire la sartén del fuego y añada el queso. Mezcle sin parar
+              de remover y vaya agregando poco a poco el agua de la pasta que
+              sobro.
+            </p>
+
+            <p>
+              5. Cuando observe que la crema tiene la consistencia que desea,
+              sazone los espaguetis con un poco de sal y pimienta.
+            </p>
+
+            <p>
+              6. Adorne con trocitos pequeños de perejil y sirva inmediatamente.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer text-center bg-dark py-5 text-white">
+      <p>Hecho con ❤️ por Yenifer</p>
+    </div>
+  </body>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+</html>
